@@ -1,3 +1,5 @@
 <?php
-echo "Bonjour";
+include('apppmvc.php');
+$mavar = new ff();
+echo $mavar -> getmamethode();
 ?>
