@@ -1,14 +1,17 @@
 <?php
+include("bdd.php");
     class ff{
         private $monattribut;
+        private $bdd;
         
         public function __construct()
         {
-
+            $this -> bdd = new BDD(); 
         }
 
         public function afficherpage($nb)
         {
+            $this -> bdd -> connexion;
             if($nb == 1)
             {
                 $this -> page1();
