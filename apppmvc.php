@@ -4,21 +4,43 @@
         
         public function __construct()
         {
-            $this-> monattribut = 10;
+
         }
 
-        public function getmamethode()
+        public function afficherpage($nb)
         {
-            return $this->monattribut;
+            if($nb == 1)
+            {
+                $this -> page1();
+            }
+            if($nb == 2)
+            {
+                $this -> page2();
+            }
+            if($nb == 3)
+            {
+                $this -> page3();
+            }
+        }
+
+        public function page1()
+        {
+            echo "Ma première page";
+        }
+        
+        public function page2()
+        {
+            echo "Ma deuxième page";
+        }
+
+        public function page3()
+        {
+            echo "Ma troisième page";
         }
 
         public function setmamethode($values)
         {
             
-            if($values >= 0 && $values <= 10) 
-            {
-                $this->monattribut = $values;
-            }
         }
     }
 
